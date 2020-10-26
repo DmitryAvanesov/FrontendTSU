@@ -1,0 +1,134 @@
+header.page-header {
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    text-align: center;
+    background: green;
+    color: white;
+    margin: 0 -100px;
+}
+
+aside.sidebar {
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    background: red;
+    color: white;
+}
+
+aside.sidebar:after {
+    background-color: red;
+    width: 200px;
+    height: 100%;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+section.content {
+    overflow: hidden;
+    padding: 0 0 50px 40px;
+}
+
+div.main-container {
+    min-height: 100%;
+    position: relative;
+    margin: 0 100px;
+    box-shadow: 0px 0px 1px;
+}
+
+footer.page-footer {
+    height: 30px;
+    margin-top: -30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+div.big-square-1 {
+    height: 200px;
+    width: 200px;
+    border: thick solid black;
+    position: relative;
+}
+
+div.big-square-2 {
+    height: 200px;
+    width: 200px;
+    border: thick solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+div.small-square {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+}
+
+section.content h2 {
+    padding: 30px 0 10px 0;
+}
+
+aside.sidebar ul {
+    list-style: none;
+    padding: 0 40px;
+}
+
+aside.sidebar > nav > ul li:first-of-type {
+    margin-top: 0;
+}
+
+aside.sidebar > nav > ul > li {
+    margin: 10px 0;
+}
+
+aside.sidebar > nav > ul > li > a {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    header.page-header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    div.main-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    aside.sidebar {
+        float: none;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    aside.sidebar:after {
+        visibility: hidden;
+    }
+
+    aside.sidebar > nav > ul > li {
+       display: inline-block;
+       font-size: 16px;
+       padding: 0 10px;
+    }
+
+    aside.sidebar > nav > ul > li:nth-of-type(3n-2) {
+        padding-left: 0;
+    }
+
+    aside.sidebar > nav {
+        font-size: 0;
+    }
+}

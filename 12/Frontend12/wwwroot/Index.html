@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Meta/title -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Web-Frontend11</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="vendor-new.min.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <!-- Web fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand anchor-link" href="#hero">Navbar</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link anchor-link" href="#hero">Hero <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link anchor-link" href="#form">Form</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Form items
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item anchor-link" href="#names">Names</a>
+                            <a class="dropdown-item anchor-link" href="#moreInfo">More info</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item anchor-link" href="#submit">Submit</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link anchor-link" href="#comments" tabindex="-1" aria-disabled="true">Comments</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron-fluid d-flex justify-content-center align-items-center text-white font-weight-bold mb-5" id="hero">
+
+            <span>I am centered. Easily.</span>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row mb-3">
+            <div class="col-sm-12 col-md-8 col-lg-4 offset-sm-0 offset-md-2 text-center text-lg-left font-weight-bold text-welcome">
+                Welcome to our cat site!
+            </div>
+
+            <div class="col-4 d-none d-lg-block text-right">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-square fa-2x mx-1"></i>
+                </a>
+
+                <a href="https://vk.com/" target="_blank">
+                    <i class="fab fa-vk fa-2x mx-1"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram fa-2x mx-1"></i>
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fab fa-youtube fa-2x mx-1"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <span class="col-sm-12 col-md-8 offset-sm-0 offset-md-2 font-weight-bold text-center text-join" id="form">Want to join us?</span>
+        </div>
+
+        <div class="row mb-3">
+            <form class="col-sm-12 col-md-8 offset-sm-0 offset-md-2">
+                <div class="form-row" id="names">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Owner's name">
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Cat's name">
+                    </div>
+                </div>
+
+                <div class="form-row" id="moreInfo">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-3">
+                        <input type="password" class="form-control" placeholder="Confirm password">
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col form-group">
+                        <label for="submit" class="font-weight-bold">Breed</label>
+                        <input type="text" class="form-control" id="submit" placeholder="Breed, hair, additional info">
+                    </div>
+                </div>
+
+                <div class="form-row justify-content-end">
+                    <button type="reset" class="btn btn-light mx-1">Clean</button>
+                    <button type="button" data-toggle="modal" data-target="#accountModal" class="btn btn-primary mx-1 sign-up-button">Sign Up</button>
+                </div>
+
+                <div class="modal fade" id="accountModal" tabindex="-1" role="dialog" aria-labelledby="accountModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="accountModalLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body container">
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-2 font-weight-bold mr-1">
+                                        Owner's name
+                                    </div>
+
+                                    <div class="col content-label">
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-2 font-weight-bold mr-1">
+                                        Cat's name
+                                    </div>
+
+                                    <div class="col content-label">
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-2 font-weight-bold mr-1">
+                                        Password
+                                    </div>
+
+                                    <div class="col content-label">
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-2 font-weight-bold mr-1">
+                                        Confirm password
+                                    </div>
+
+                                    <div class="col content-label">
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-2 font-weight-bold mr-1">
+                                        Breed
+                                    </div>
+
+                                    <div class="col content-label">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-8 offset-sm-0 offset-md-2 alert alert-secondary text-success font-weight-bold mt-2 py-2 text-explore" role="alert" id="comments">
+                Explore our catmunity!
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="col-sm-12 col-md-8 offset-sm-0 offset-md-2 list-unstyled">
+                <li class="media">
+                    <img src="media/avatar1.jpg" class="mr-3 avatar-image" alt="avatar #1">
+
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+
+                <li class="media my-4">
+                    <img src="media/avatar2.jpg" class="mr-3 avatar-image" alt="avatar #2">
+
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">Media heading</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                        <div class="media mt-3">
+                            <img src="media/avatar3.jpg" class="mr-3 avatar-image" alt="avatar #3">
+
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                                <div class="media mt-3">
+                                    <img src="media/avatar2.jpg" class="mr-3 avatar-image" alt="avatar #2">
+
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Media heading</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="media mt-3">
+                            <img src="media/avatar4.jpg" class="mr-3 avatar-image" alt="avatar #4">
+
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="media my-4">
+                    <img src="media/avatar5.jpg" class="mr-3 avatar-image" alt="avatar #5">
+
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="container-fluid text-center bg-light py-3 page-footer">
+        I am still sticky. With flexbox.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor-new.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.news-container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #D4EAF9;
+    box-shadow: 0px 0px 6px 0px grey;
+}
+
+div.news-container > div.news-item {
+    transition: background 0.5s linear;
+    background-color: transparent;
+    padding: 30px 20px 0 20px;
+    text-align: center;
+    border-bottom: solid 2px black;
+}
+
+div.news-container > div.news-item:hover {
+    transition: background 0.5s linear;
+    background-color: #BB90A6;
+}
+
+div.news-container > div.news-item > h2.news-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+div.news-container > div.news-item > div.news-text-short {
+    font-size: 18px;
+    line-height: 1.25em;
+    text-align: left;
+}
+
+div.news-container > div.news-item > div.news-text-long {
+    display: none;
+}
+
+div.news-container > div.news-item > div.open-popup-button {
+    display: inline-block;
+    padding: 6px;
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #76D77E, #4A9E4C);
+    box-shadow: 0px 0px 3px 0px grey;
+    cursor: pointer;
+}
+
+div.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+div.popup-visible {
+    opacity: 1;
+}
+
+div.popup-scrollable {
+    overflow: scroll;
+}
+
+div.popup > div.popup-background {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 100%;
+}
+
+div.popup > div.popup-item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    width: 600px;
+    background-color: #D2EFAB;
+    padding: 10px;
+}
+
+div.popup > div.popup-item-scrollable {
+    top: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+div.popup > div.popup-item > h3.popup-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+
+div.popup > div.popup-item > div.popup-text {
+    transition: background 0.5s linear;
+    font-size: 16px;
+    line-height: 1.25em;
+}
